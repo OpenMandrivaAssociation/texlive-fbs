@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/misc/fbs.bst
+# catalog-date 2008-08-19 20:38:14 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-fbs
 Version:	20080819
 Release:	1
@@ -37,6 +43,7 @@ of reference; and - DOI excluded, ISSN excluded.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/bibtex/bst/fbs/fbs.bst
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,3 +54,5 @@ of reference; and - DOI excluded, ISSN excluded.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
