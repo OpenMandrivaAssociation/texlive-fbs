@@ -45,3 +45,17 @@ of reference; and - DOI excluded, ISSN excluded.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080819-2
++ Revision: 751795
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080819-1
++ Revision: 718422
+- texlive-fbs
+- texlive-fbs
+- texlive-fbs
+- texlive-fbs
+
