@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-fbs
 Version:	20080819
-Release:	6
+Release:	7
 Summary:	BibTeX style for Frontiers in Bioscience
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/fbs.bst
