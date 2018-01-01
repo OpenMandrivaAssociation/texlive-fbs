@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/misc/fbs.bst
-# catalog-date 2008-08-19 20:38:14 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-fbs
 Version:	20170414
 Release:	1
@@ -34,7 +28,7 @@ of reference; and - DOI excluded, ISSN excluded.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/fbs/fbs.bst
+%{_texmfdistdir}/bibtex/bst/fbs
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,17 +39,3 @@ of reference; and - DOI excluded, ISSN excluded.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080819-2
-+ Revision: 751795
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080819-1
-+ Revision: 718422
-- texlive-fbs
-- texlive-fbs
-- texlive-fbs
-- texlive-fbs
-
