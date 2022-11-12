@@ -1,11 +1,11 @@
 Name:		texlive-fbs
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	BibTeX style for Frontiers in Bioscience
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/fbs.bst
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbs.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbs.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ italicised, no abbreviation dots; - only year, no month, at end
 of reference; and - DOI excluded, ISSN excluded.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -32,7 +32,7 @@ of reference; and - DOI excluded, ISSN excluded.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
