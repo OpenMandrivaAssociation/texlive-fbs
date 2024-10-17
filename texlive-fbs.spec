@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	BibTeX style for Frontiers in Bioscience
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/fbs.bst
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/fbs.bst
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbs.r%{version}.tar.xz
 BuildArch:	noarch
